@@ -1,26 +1,26 @@
-id: fc637ff8-0344-4819-b824-0bb9eaad019f
-version: v2
-name: testmuditamitmproxy
-apptype: api
-language: python
-containerName: testmuditamitmproxy
+id: 'fc637ff8-0344-4819-b824-0bb9eaad019f'
+version: 'v2'
+name: 'testmuditamitmproxy'
+apptype: 'api'
+language: 'python'
+containerName: 'testmuditamitmproxy'
 toolchain:
-  id: 58f956498ef1e700214218ea
-  name: Qubeship-Python-Toolchain
+  id: '58f956498ef1e7001e4218e7'
+  name: 'Qubeship-Java-Toolchain'
 opinion:
-  id: 58f95649e936e0000b151362
-  name: Qubeship default opinion
+  id: '58f95649e936e0000b151362'
+  name: 'Qubeship default opinion'
 endpoint:
-  id: 58ee79cc238503000b74d7b1
-  name: Qubeship Sandbox Cluster
-  type: target
+  id: '58ee79cc238503000b74d7b1'
+  name: 'Qubeship Sandbox Cluster'
+  type: 'target'
 variables:
-  - name: APP_VERSION
-    value: v0.1
+- name: 'APP_VERSION'
+  value: 'v0.1'
 build:
   compile:
     publish:
-     - dist/
+    - dist/
 bake:
   skip: false
 test:
@@ -29,4 +29,3 @@ deploy_to_qa:
   skip: true
 deploy_to_prod:
   skip: false
-
